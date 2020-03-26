@@ -43,29 +43,29 @@ X_test = scaler.transform(X_test)
 # X_test = imputer.transform(X_test)
 
 # Logistic Regression
-# logreg = LogisticRegression()
+logreg = LogisticRegression()
 
-# logreg.fit(X_train, y_train)
+logreg.fit(X_train, y_train)
 
-# print('Accuracy of Logistic regression classifier on training set: {:.2f}'
-#         .format(logreg.score(X_train, y_train)))
+print('Accuracy of Logistic regression classifier on training set: {:.2f}'
+        .format(logreg.score(X_train, y_train)))
 
-# print('Accuracy of Logistic regression classifier on test set: {:.2f}'
-#         .format(logreg.score(X_test, y_test)))
+print('Accuracy of Logistic regression classifier on test set: {:.2f}'
+        .format(logreg.score(X_test, y_test)))
 
-# pred = logreg.predict(X_test)
+pred = logreg.predict(X_test)
 
 # Decision Tree
-# clf = DecisionTreeClassifier()
+#clf = DecisionTreeClassifier()
 
-# clf.fit(X_train, y_train)
+#clf.fit(X_train, y_train)
 
-# print('Accuracy of Decision Tree classifier on training set: {:.2f}'
-#      .format(clf.score(X_train, y_train)))
-# print('Accuracy of Decision Tree classifier on test set: {:.2f}'
-#      .format(clf.score(X_test, y_test)))
+#print('Accuracy of Decision Tree classifier on training set: {:.2f}'
+#    .format(clf.score(X_train, y_train)))
+#print('Accuracy of Decision Tree classifier on test set: {:.2f}'
+#    .format(clf.score(X_test, y_test)))
 
-# pred = clf.predict(X_test)
+#pred = clf.predict(X_test)
 
 # Gaussian Naive Bayes
 # gnb = GaussianNB()
@@ -80,16 +80,16 @@ X_test = scaler.transform(X_test)
 # pred = gnb.predict(X_test)
 
 # K-Nearest Neighbors
-knn = KNeighborsClassifier()
+#knn = KNeighborsClassifier()
 
-knn.fit(X_train, y_train)
+#knn.fit(X_train, y_train)
 
-print('\nAccuracy of K-NN classifier on training set: {:.2f}'
-    .format(knn.score(X_train, y_train)))
-print('Accuracy of K-NN classifier on test set: {:.2f}'
-    .format(knn.score(X_test, y_test)))
+#print('\nAccuracy of K-NN classifier on training set: {:.2f}'
+#    .format(knn.score(X_train, y_train)))
+#print('Accuracy of K-NN classifier on test set: {:.2f}'
+#    .format(knn.score(X_test, y_test)))
 
-pred = knn.predict(X_test)
+#pred = knn.predict(X_test)
 
 print('\nX_test')
 print(X_test)
